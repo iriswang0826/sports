@@ -3,13 +3,14 @@
 	margin: 0 auto;
 	overflow-x: hidden;
 	font-size: .32rem;
+	padding-bottom: .4rem;
 }
 i.icon {
 	display: inline-block;
 }
 .login {
 	background: url(../images/login_bg0.png);
-	padding: .4rem 0;
+	padding-top: .4rem;
 	.login-pannel {
 		width: 7.34rem;
 		height: 11.26rem;
@@ -69,4 +70,269 @@ i.icon {
 			}
 		}
 	}
+}
+.index {
+	background: url(../images/index_bg.png) no-repeat top center;
+	background-size: contain;
+	.logout {
+		text-align: right;
+		padding-right: .3rem;
+		button {
+			background: url(../images/student/zhuxiao_icon.png) no-repeat left center;
+			background-size: .28rem;
+			font-size: .32rem;
+			color: #fff;
+			line-height: 1.06rem;
+			padding-left: .38rem;
+		}
+	}
+	.banner {
+		width: 7.28rem;
+		height: 3.84rem;
+		margin: 0 auto;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.list {
+		width: 6.9rem;
+		margin: 0 auto;
+		a {
+			width: 3.45rem;
+			height: 3.45rem;
+			float: left;
+			font-size: .3rem;
+			color: #333;
+			text-align: center;
+			background: url(../images/index_list_bg.png) no-repeat;
+			background-size: contain;
+			.list-item {
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				img {
+					width: .82rem;
+				}
+				.txt {
+					margin-top: .36rem;
+				}
+			}
+		}
+		a.add {
+			color: #999;
+		}
+	}
+}
+.info-list {
+	padding: .2rem;
+	background: #f8f8f8;
+}
+.student {
+	.banner {
+		background-image: url(../images/student/banner.png); 
+	}
+}
+.teacher {
+	.banner {
+		background-image: url(../images/teacher/banner.png); 
+	}
+}
+.card {
+	width: 100%;
+	margin: 0 auto .2rem;
+	background: #fff;
+	border: 1px solid #e3e3e3;
+	border-radius: 6px;
+	box-shadow:  0 3px 5px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+	.card-cell {
+		// min-height: 1rem;
+		background: #fff;
+		display: -webkit-box;
+		display: -webkit-flex; 
+  		display: flex;
+		padding: .3rem;
+		font-size: .32rem;
+		border-bottom: 1px solid #e3e3e3;
+		align-items: baseline;
+		.txt-left {
+			// line-height: 1rem;
+			color: #333;
+		}
+		.txt-right {
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			flex: 1;
+			text-align: right;
+			color: #999;
+			word-break: break-all;
+			padding-left: .2rem;
+		}
+		.txt-right.content {
+			text-align: left;
+		}
+	}
+	.card-cell:last-child {
+		border-bottom: none;
+	}
+}
+.card-title {
+	font-size: .28rem;
+	color: #999;
+	margin-bottom: .2rem;
+	padding-left: .3rem;
+}
+.card.card1 {
+	.card-cell {
+		// padding: 0 .3rem;
+		background: url(../images/card_arrow.png) no-repeat right .3rem center;
+		background-size: .22rem;
+		.txt-right {
+			padding-right: .5rem;
+		}
+	}
+}
+.card.card1.timetable {
+	.card-cell {
+		padding: 0 .3rem;
+		height: 1.2rem;
+		padding-right: .46rem;
+		background-position: right .46rem center;
+		.txt-right {
+			line-height: 1.2rem;
+			color: #333;
+		}
+	}	
+	.card-cell.now {
+		.txt-left, .txt-right {
+			color: #fe7201;
+		}
+	}
+}
+.card.card1.timetable.class {
+	.card-cell {
+		.txt-left{
+			color: #999;
+		}
+		.txt-right {
+			color: #999;
+		}
+	}
+	.card-cell.now {
+		.txt-left {
+			color: #333;
+		}
+		.txt-right {
+			color: #fe7201;
+		}
+	}
+}
+.card.card1.timetable.stu {
+	.card-cell {
+		.txt-left{
+			color: #333;
+		}
+		.txt-right {
+			color: #999;
+		}
+	}
+	.card-cell.now {
+		.txt-left {
+			color: #333;
+		}
+		.txt-right {
+			color: #fe7201;
+		}
+	}
+}
+.card.card2 {
+	.card-cell {
+		height: 2.82rem;
+		display: -webkit-box;
+		display: -webkit-flex; 
+  		display: flex;
+  		align-items: center;
+  		justify-content: space-between;
+  		padding: 0 1rem;
+		.card2-item {
+			padding-top: .72rem;
+			background-repeat: no-repeat;
+			background-size: .52rem;
+			background-position: top center;
+			text-align: center;
+			font-size: .32rem;
+			color: #3a7eeb;
+		}
+		.arrow {
+			width: .6rem;
+			height: .06rem;
+			background: url(../images/teacher/l_arrow.png) no-repeat;
+			background-size: contain;
+		}
+		.card2-item.start {
+			background-image: url(../images/teacher/shangke_lan.png);
+		}
+		.card2-item.rollcall {
+			background-image: url(../images/teacher/dianming_lan.png);
+		}
+		.card2-item.comment {
+			background-image: url(../images/teacher/pingjia_lan.png);
+		}
+		.card2-item.end {
+			color: #aaa;
+		}
+		.card2-item.start.end {
+			background-image: url(../images/teacher/shangke_hui.png);
+		}
+		.card2-item.rollcall.end {
+			background-image: url(../images/teacher/dianming_hui.png);
+		}
+		.card2-item.comment.end {
+			background-image: url(../images/teacher/pingjia_hui.png);
+		}
+	}
+}
+.card.card3 {
+	background: #1f8dfb;
+	padding: .2rem 0 0;
+	.card-cell {
+		padding: 0 .3rem;
+		.txt-right {
+			font-size: .26rem;
+			color: #666;
+		}
+	}
+	.title {
+		line-height: .88rem;
+	}
+	.ccontent {
+		font-size: .3rem;
+		color: #333;
+		padding: .4rem .3rem;
+	}
+}
+.card.card4 {
+	margin-bottom: .3rem;
+	.card-cell {
+		padding: 0 .3rem;
+		.txt-left {
+			color: #fff;
+		}
+		.txt-right {
+			font-size: .26rem;
+			color: #fff;
+		}
+	}
+	.title {
+		line-height: .8rem;
+		background: url(../images/noice_bg.png) no-repeat;
+		background-size: cover;
+	}
+	.ccontent {
+		font-size: .3rem;
+		color: #333;
+		padding:.3rem;
+	}
+}
+.card.card4:first-child {
+	margin-top: .1rem;
 }
